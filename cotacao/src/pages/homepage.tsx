@@ -1,8 +1,23 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import CardCountry from '../components/CardCountry';
 import Header from '../components/Header';
+import Country from '../types/Country';
+import {fetchFlags} from '../server/apiGateway';
 
 const HomePage = () => {
+    const [list, setList] = useState<string[] | undefined>()
+
+    useEffect(() => {
+        const fetchData = async () => {
+            try {
+                const data = await fetchFlags();
+                setList(data);
+            } catch (err) {
+                console.error(err);
+            }
+        }
+    })
+
     return (
         <div>
             <Header></Header>
