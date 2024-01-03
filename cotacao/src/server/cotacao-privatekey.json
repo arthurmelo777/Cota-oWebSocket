@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "cotacao-410117",
+  "private_key_id": "0486a97755d9afc0386c2a5cc4a1e31dfc78e000",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDwPtWXWUnOoAw5\nonC3mdNDz38dPNIBJv9jQZyFylc8wT6UkhChYwX0StKwp6c/7TgK6ofO8xYjTaMj\nfXL3Ex7k549JzzHy662Vso66T+0jAqEjyiTfHBj9RoC6fnlHDfK1ivM2I2YvSmIU\nU9PX2ojRGmHueWSl4BDI+je66v/ac0bKb4nJYzESXHvmTiQ4F4SsVpDDspOH2rIH\nvS/kKrIxBZfgYua3uxHgtzUiu7hdRTPabVj/vegLo4L7asIGTc4cGFuY43/J9LzY\n0qyzyuT3xJJGQY/FDMCWCdgfKelRvVkdLY+vNbpHosvGPyUra7CxgQApxH0wEHz6\nMcn7GMo7AgMBAAECggEASeAAfQxLSlrjt3tQbtzB3qm5HEv+BbWwtZxQ3cE1Jy0D\nKdtqer4A8Dhr5j9/igRPhefNgCE2zv9KKZkjV3+NMfVUle09HkZDd/NSuU7njCr8\nUw2PXf39XzClV/OZJnTPC+0g0aZ7/xG/7CFE1KzSAn6624J/pRQsBSkQJw2pREoy\n1PQ9PnfE+rnTARFGV1FfY+l3QLu9ckOFQgQuyxs4KSyKSwj9ZxA81zG6kDsHT80O\nt1kcPZS/RGZSchRmNIj+SwdmMD/ErWsw3TX3OnEbNVzDskPwq0hoL+23BN6aHUqH\nzXgVaj77HcLsF7zTCuGHW/byJPwFCNa1PckSVmiJoQKBgQD6fKeibf56NHPy2Ktq\nYJKByWmB+oNqHpWT7x70za/ghLbDmIIcMbHAnGO2FbzG8XpTtHI7bNwLI2UuE7hw\nRjV9VFBQQs6eK7r6W2X1H5L56IbE86NRZ7CCMJQFVYxZc2l1tUTHZru89L967f1e\nJko6FJo5Y5k7X7dJqUSfq7dE2wKBgQD1iHmN+z/h2rQLBtyAQEK2AOAftdTB8bB9\nlc7rAokhz+sqy2cdaS+PvEZQQl+QBZwvWoeXkOAWHsok9VQ5O/ET5nuC7zZMQI+K\nWYPbTScfbBoJHbOUUVEY3FMjXMyBsxC4IfX+vl6L0XLmtt/IJ4Rnr9GktiXyailL\nwC0xojneIQKBgF9Tg0RokdkWDy5TUOD6AaeM7C9AFDUVkJ0s+l31zUInn5pOdu2d\n5+TCX5wTJ7WafpBOcs60vgUrIj1n2eA4h/C7Xpk8438Ea3MNx36C1p9u46MeiX/Y\ncy8Ip7xj8zazmmXmZ1dvfHELv7dbzPnAnqz93DeM9OrIoWtSFMCjS+rTAoGBAI3L\nBZ+X5BlzKpxflwE9mwjuUoAdisOB5tFvrTIModLz9rQdCOx0LTJNoTGCUxuiEcNK\n/Zjq4m4D0+sp/jybQCqk5NkFeg7pDbvw2/POh3RfAl4XV/ikSTgZLK30TmnsVhBw\nFFbL61/FUhyoqW02XQFgCKqdQibPZg/H6JGMROzhAoGBAOEudjXLITHxFLP7MmnQ\ndqMQoCJ6MbqdvwmTDeX0IPjbxjs5A6CSQkS1N2tQVzbDrRe0HV/pnqw8fWkLxesK\nA79evl9isXL/uZCZujESnYc0G5R+8XADadW8EIlrJphLX2BbauAMaHviaYw0cuCZ\n/p6jriFYkbETfZeFCArH8bS1\n-----END PRIVATE KEY-----\n",
+  "client_email": "cotacao-servico@cotacao-410117.iam.gserviceaccount.com",
+  "client_id": "109624745819854718346",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/cotacao-servico%40cotacao-410117.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
