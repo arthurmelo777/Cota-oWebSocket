@@ -4,13 +4,15 @@ const WebSocket = require("ws");
 const endpoint = "https://economia.awesomeapi.com.br/json/last/";
 
 const wss = new WebSocket.Server({ port: 8080 });
-let moeda = "";
+const clientsMap = new Map();
 
-function fetchAndBroadcastData(moeda, ws) {
+function fetchAndBroadcastData(ws) {
+  const moeda = clientsMap.get(ws);
+  console.log(`${endpoint}${moeda}`);
   axios
     .get(`${endpoint}${moeda}`)
     .then((response) => {
-      const data = response.data[moeda];
+      const data = response.data;
       ws.send(JSON.stringify(data));
     })
     .catch((error) => {
@@ -23,17 +25,17 @@ wss.on("connection", (ws, req) => {
 
   const urlParams = new URLSearchParams(req.url.split("?")[1]);
   moeda = urlParams.get("moeda");
-  console.log(moeda);
+  if (moeda) clientsMap.set(ws, moeda);
   ws.on("close", () => {
     console.log("Cliente desconectado.");
   });
 });
 
 setInterval(() => {
+  let i = 0;
   wss.clients.forEach((client) => {
-    console.log("ok");
     if (client.readyState === WebSocket.OPEN) {
-      fetchAndBroadcastData(moeda, client);
+      fetchAndBroadcastData(client);
     }
   });
-}, 500);
+}, 10000);
