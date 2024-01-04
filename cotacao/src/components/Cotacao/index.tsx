@@ -3,17 +3,39 @@ import React, { useEffect, useState } from "react";
 interface Props {
     moeda: string
     sigla: string
-    socket: any
 }
 
-const Cotacao = ({moeda, sigla, socket}: Props) => {
+const Cotacao = ({moeda, sigla}: Props) => {
     const [cotacao, setCotacao] = useState('');
     
     useEffect (() => {
-        socket.onmessage = (event: any) => {
-            socket.send(sigla)
-            setCotacao(event.data);
+        async function fetchData() {
+            try {
+                const response = await fetch('https://localhost:5000/api/send_cotacao')
+                const data = await response.json()
+                setCotacao(data.mensagem)
+            } catch (err) {
+                console.error(err)
+            }
         }
+
+        fetchData();
+    }, [])
+
+    useEffect (() => {
+        async function fetchData() {
+            try {
+                const response = await fetch('http://localhost:5000/api/fetch_exchange_rate', {
+                    method: 'POST',
+                    body: JSON.stringify({message: sigla}),
+                });
+                console.log(response);
+            } catch (err) {
+                console.error(err)
+            }
+        }
+
+        fetchData();
     }, [])
 
     return (

@@ -12,26 +12,6 @@ interface Props {
 }
 
 const CountryPage = ({bandeira, nome, moeda, code, moedasParse, nomeMoedasParse}: Props) => {
-    const newSocket = new WebSocket('ws://localhost:8000');
-
-    useEffect(() => {
-        newSocket.onopen = () => {
-          console.log('Conexão com o servidor aberta.');
-        };
-      
-        newSocket.onclose = (event) => {
-          console.log('Conexão com o servidor fechada:', event);
-        };
-      
-        newSocket.onerror = (error) => {
-          console.error('Erro na conexão com o servidor:', error);
-        };
-      
-        return () => {
-          newSocket.close();
-        };
-      }, []);
-      
 
     return (
         <div>
@@ -52,11 +32,11 @@ const CountryPage = ({bandeira, nome, moeda, code, moedasParse, nomeMoedasParse}
                     </div>
                     <div className="col-6">
                         <h3>1.00 {moeda} equivale a:</h3>
-                        <Cotacao moeda={nomeMoedasParse[0]} sigla={`${moedasParse[0]}-${code}`} socket={newSocket}></Cotacao>
-                        <Cotacao moeda={nomeMoedasParse[1]} sigla={`${moedasParse[1]}-${code}`} socket={newSocket}></Cotacao>
-                        <Cotacao moeda={nomeMoedasParse[2]} sigla={`${moedasParse[2]}-${code}`} socket={newSocket}></Cotacao>
-                        <Cotacao moeda={nomeMoedasParse[3]} sigla={`${moedasParse[3]}-${code}`} socket={newSocket}></Cotacao>
-                        <Cotacao moeda={nomeMoedasParse[4]} sigla={`${moedasParse[4]}-${code}`} socket={newSocket}></Cotacao>
+                        <Cotacao moeda={nomeMoedasParse[0]} sigla={`${moedasParse[0]}-${code}`} ></Cotacao>
+                        <Cotacao moeda={nomeMoedasParse[1]} sigla={`${moedasParse[1]}-${code}`} ></Cotacao>
+                        <Cotacao moeda={nomeMoedasParse[2]} sigla={`${moedasParse[2]}-${code}`} ></Cotacao>
+                        <Cotacao moeda={nomeMoedasParse[3]} sigla={`${moedasParse[3]}-${code}`} ></Cotacao>
+                        <Cotacao moeda={nomeMoedasParse[4]} sigla={`${moedasParse[4]}-${code}`} ></Cotacao>
                     </div>
                 </div>
             </div>
