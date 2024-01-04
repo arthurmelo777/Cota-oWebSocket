@@ -32,11 +32,11 @@ const CountryPage = ({ bandeira, nome, moeda, code, moedasParse, nomeMoedasParse
                     <div className="col-6">
                         <h4 className='pt-3 lh-1'>Preço do {moeda} hoje:</h4>
                         <table>
-                            <Cotacao moeda={nomeMoedasParse[0]} sigla={`${moedasParse[0]}-${code}`} />
-                            <Cotacao moeda={nomeMoedasParse[1]} sigla={`${moedasParse[1]}-${code}`} />
-                            <Cotacao moeda={nomeMoedasParse[2]} sigla={`${moedasParse[2]}-${code}`} />
-                            <Cotacao moeda={nomeMoedasParse[3]} sigla={`${moedasParse[3]}-${code}`} />
-                            <Cotacao moeda={nomeMoedasParse[4]} sigla={`${moedasParse[4]}-${code}`} />
+                            <Cotacao moeda={nomeMoedasParse[0]} sigla={`${code}-${moedasParse[0]}`} />
+                            <Cotacao moeda={nomeMoedasParse[1]} sigla={`${code}-${moedasParse[1]}`} />
+                            <Cotacao moeda={nomeMoedasParse[2]} sigla={`${code}-${moedasParse[2]}`} />
+                            <Cotacao moeda={nomeMoedasParse[3]} sigla={`${code}-${moedasParse[3]}`} />
+                            <Cotacao moeda={nomeMoedasParse[4]} sigla={`${code}-${moedasParse[4]}`} />
                         </table>
                     </div>
                 </div>
