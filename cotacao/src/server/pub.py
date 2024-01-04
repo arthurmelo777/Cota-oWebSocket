@@ -25,5 +25,3 @@ def fetch_exchange_rate(message):
     except Exception as e:
         print(e)
         return 'Erro'
-    
-print(fetch_exchange_rate('USD-RUB'))
