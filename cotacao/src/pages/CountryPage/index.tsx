@@ -10,11 +10,7 @@ interface Props {
     nomeMoedasParse: string[]
 }
 
-<<<<<<< HEAD
-const CountryPage = ({bandeira, nome, moeda, code, moedasParse, nomeMoedasParse}: Props) => {
-=======
 const CountryPage = ({ bandeira, nome, moeda, code, moedasParse, nomeMoedasParse }: Props) => {
->>>>>>> 400892061e7794c00d59d577d0cf4aa59ba205e6
 
     return (
         <div>
@@ -34,14 +30,7 @@ const CountryPage = ({ bandeira, nome, moeda, code, moedasParse, nomeMoedasParse
                         <p>{moeda}</p>
                     </div>
                     <div className="col-6">
-<<<<<<< HEAD
-                        <h3>1.00 {moeda} equivale a:</h3>
-                        <Cotacao moeda={nomeMoedasParse[0]} sigla={`${moedasParse[0]}-${code}`} ></Cotacao>
-                        <Cotacao moeda={nomeMoedasParse[1]} sigla={`${moedasParse[1]}-${code}`} ></Cotacao>
-                        <Cotacao moeda={nomeMoedasParse[2]} sigla={`${moedasParse[2]}-${code}`} ></Cotacao>
-                        <Cotacao moeda={nomeMoedasParse[3]} sigla={`${moedasParse[3]}-${code}`} ></Cotacao>
-                        <Cotacao moeda={nomeMoedasParse[4]} sigla={`${moedasParse[4]}-${code}`} ></Cotacao>
-=======
+
                         <h4 className='pt-3 lh-1'>Preço do {moeda} hoje:</h4>
                         <table>
                             <Cotacao moeda={nomeMoedasParse[0]} sigla={`${code}-${moedasParse[0]}`} />
@@ -50,7 +39,6 @@ const CountryPage = ({ bandeira, nome, moeda, code, moedasParse, nomeMoedasParse
                             <Cotacao moeda={nomeMoedasParse[3]} sigla={`${code}-${moedasParse[3]}`} />
                             <Cotacao moeda={nomeMoedasParse[4]} sigla={`${code}-${moedasParse[4]}`} />
                         </table>
->>>>>>> 400892061e7794c00d59d577d0cf4aa59ba205e6
                     </div>
                 </div>
             </div>
